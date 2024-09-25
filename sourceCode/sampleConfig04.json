@@ -1,0 +1,10 @@
+{
+    "dataStructure": "adjmat",
+    "rowNum": 40,
+    "colNum": 40,
+    "dsApproach": "iter",
+    "entrances": [[1,-1],[1,5]],
+    "exits": [[1,5],[-1,5]],
+    "generator": "recur",
+    "visualise": false
+}

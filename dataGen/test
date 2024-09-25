@@ -1,0 +1,24 @@
+import time
+import subprocess
+
+# Command to run in the terminal
+command = "python mazeTester.py sampleConfig04.json"
+
+# Number of times to run the command
+num_runs = 100
+
+# Store start time
+start_time = time.time()
+
+# Run the command num_runs times
+for _ in range(num_runs):
+    subprocess.run(command, shell=True)
+
+# Calculate total time taken
+total_time = time.time() - start_time
+
+# Calculate average time per run
+average_time_per_run = total_time / num_runs
+
+print(f"Total time taken for {num_runs} runs: {total_time} seconds")
+print(f"Average time per run: {average_time_per_run} seconds")
